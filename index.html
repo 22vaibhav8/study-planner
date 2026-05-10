@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Study Planner</h1>
+
+    <p class="subtitle">
+      Track assignments, deadlines and completed work in one place
+    </p>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-label">Total</span>
+        <strong id="totalCount">0</strong>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-label">Pending</span>
+        <strong id="pendingBadge">0</strong>
+      </div>
+    </div>
+
+    <div class="form">
+      <input type="text" id="title" placeholder="Assignment title">
+      <input type="text" id="subject" placeholder="Subject">
+      <input type="date" id="dueDate">
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <div id="pendingCount" class="count"></div>
+
+    <div id="taskList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
